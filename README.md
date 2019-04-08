@@ -1,10 +1,8 @@
 # My Project
 
-A brief description of My Project.
+For us in Acquia Presales demos.
 
 ## Using This Template
-
-Remove this section after initial setup!
 
 Search for and replace the following placeholders within this file:
 
