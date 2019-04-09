@@ -5,9 +5,11 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "acquia/blt": "^9.2.0"
+        "acquia/blt": "^9.2.0",
+        "consolidation/site-alias": "^1.1.5"
     },
     "require-dev": {
+        "drush/drush": "9.5.2",
         "geerlingguy/drupal-vm": "^4.8"
     },
     "config": {
