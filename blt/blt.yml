@@ -10,7 +10,7 @@ project:
 git:
   default_branch: drupalcon-seattle
   remotes:
-    - ccsales@svn-3844.devcloud.hosting.acquia.com:ccsales.git
+    - cddemo11@svn-28441.prod.hosting.acquia.com:cddemo11.git
   hooks:
     pre-commit: false
     commit-msg: false
