@@ -1,15 +1,16 @@
 project:
-  machine_name: drupalcon-seattle
-  prefix: BLT
-  human_name: 'BLTed 8'
+  machine_name: drupalcon_seattle
+  prefix: SEATTLE
+  human_name: 'DrupalCon Seattle Cloud CD Demo'
   profile:
     name: lightning
   local:
     protocol: http
-    hostname: 'local.${project.machine_name}.com'
+    hostname: 'lc.${project.machine_name}'
 git:
   default_branch: master
-  remotes: {  }
+  remotes:
+    - ccsales@svn-3844.devcloud.hosting.acquia.com:ccsales.git
 deploy:
   tag_source: true
 drush:
