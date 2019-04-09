@@ -8,7 +8,7 @@ project:
     protocol: http
     hostname: 'lc.${project.machine_name}'
 git:
-  default_branch: master
+  default_branch: drupalcon-seattle
   remotes:
     - ccsales@svn-3844.devcloud.hosting.acquia.com:ccsales.git
   hooks:
