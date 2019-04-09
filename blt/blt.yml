@@ -11,6 +11,9 @@ git:
   default_branch: master
   remotes:
     - ccsales@svn-3844.devcloud.hosting.acquia.com:ccsales.git
+  hooks:
+    pre-commit: false
+    commit-msg: false
 deploy:
   tag_source: true
 drush:
