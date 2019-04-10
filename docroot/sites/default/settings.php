@@ -754,6 +754,8 @@ $settings['file_scan_ignore_directories'] = [
  */
 $settings['entity_update_batch_size'] = 50;
 
+$config_directories['vcs'] = $app_root . '/../config/' . basename($site_path);
+
 if (file_exists('/var/www/site-php')) {
   require '/var/www/site-php/cddemo11/drupalcon_seattle-settings.inc';
 }

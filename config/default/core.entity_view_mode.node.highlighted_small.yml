@@ -1,0 +1,12 @@
+uuid: b32931d3-4ffd-48cc-849a-fb0cb5e95551
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: uwYyeoazlcV1zRkr8h1NPpfC2MQUFaF2lnAWXNjmmec
+id: node.highlighted_small
+label: 'Highlighted Small'
+targetEntityType: node
+cache: true
