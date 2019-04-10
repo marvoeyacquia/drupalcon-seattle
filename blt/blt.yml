@@ -3,7 +3,7 @@ project:
   prefix: SEATTLE
   human_name: 'DrupalCon Seattle Cloud CD Demo'
   profile:
-    name: lightning
+    name: demo_umami
   local:
     protocol: http
     hostname: 'lc.${project.machine_name}'
