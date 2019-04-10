@@ -1,5 +1,5 @@
 project:
-  machine_name: drupalcon_seattle
+  machine_name: drupalcon-seattle
   prefix: SEATTLE
   human_name: 'DrupalCon Seattle Cloud CD Demo'
   profile:
@@ -18,7 +18,7 @@ deploy:
   tag_source: true
 drush:
   aliases:
-    remote: '${project.machine_name}.test'
+    remote: '${project.machine_name}.dev'
     local: self
     ci: self
   default_alias: '${drush.aliases.local}'
