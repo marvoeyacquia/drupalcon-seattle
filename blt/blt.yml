@@ -38,3 +38,21 @@ modules:
   prod:
     enable: [acquia_connector, shield]
     uninstall: [devel, views_ui]
+cm:
+  # Possible values: core-only, config-split, features, none.
+  strategy: config-split
+  core:
+    # The parent directory for configuration directories, relative to the docroot.
+    path: ../config
+    # The default config key to use for imports. This is the key used in Drupal's global $config_directories variable.
+    # E.g., $config_directories['sync']. It must have a corresponding key in cm.core.dirs. E.g., `cm.core.dirs.sync`.
+    key: sync
+    dirs:
+      # Corresponding value is defined in config.settings.php.
+      sync:
+        path: ${cm.core.path}/default
+    # Install site directly from existing config.
+    # This cannot be used if your install profile implements hook_install.
+    install_from_config: true
+  features:
+    no-overrides: true
