@@ -28,7 +28,7 @@ events:
 #            type: script
 #            script:
 #              - source ${BLT_DIR}/scripts/pipelines/setup_app
-#        - debug:
+        - debug:
             type: script
             script:
               - ${SOURCE_DIR}/blt/scripts/debug
