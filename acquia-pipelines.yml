@@ -28,26 +28,30 @@ events:
             type: script
             script:
               - source ${BLT_DIR}/scripts/pipelines/setup_app
+        - debug:
+            type: script
+            script:
+              - ${SOURCE_DIR}/blt/scripts/
         # Uncomment these lines to test database updates using live content.
-        - install-drupal:
-            type: script
-            script:
-              - blt drupal:install
-        - test-updates:
-            type: script
-            script:
-              - blt drupal:sync:default:site
-        - tests:
-            type: script
-            script:
-              - source ${BLT_DIR}/scripts/pipelines/tests
-        - build-artifact:
-            type: script
-            script:
-              - source ${BLT_DIR}/scripts/pipelines/build_artifact
-        - deploy:
-             script:
-               - pipelines-deploy
+#        - install-drupal:
+#            type: script
+#            script:
+#              - blt drupal:install
+#        - test-updates:
+#            type: script
+#            script:
+#              - blt drupal:sync:default:site
+#        - tests:
+#            type: script
+#            script:
+#              - source ${BLT_DIR}/scripts/pipelines/tests
+#        - build-artifact:
+#            type: script
+#            script:
+#              - source ${BLT_DIR}/scripts/pipelines/build_artifact
+#        - deploy:
+#             script:
+#               - pipelines-deploy
   post-deploy:
     steps:
       - deploy:
