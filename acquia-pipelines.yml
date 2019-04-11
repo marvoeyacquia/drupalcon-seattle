@@ -20,15 +20,15 @@ events:
               - source ${BLT_DIR}/scripts/pipelines/setup_env
               # - nvm install v6.9.1
               # - npm install --global yarn
-        - validate:
-            type: script
-            script:
-              - source ${BLT_DIR}/scripts/pipelines/validate
-        - setup-app:
-            type: script
-            script:
-              - source ${BLT_DIR}/scripts/pipelines/setup_app
-        - debug:
+#        - validate:
+#            type: script
+#            script:
+#              - source ${BLT_DIR}/scripts/pipelines/validate
+#        - setup-app:
+#            type: script
+#            script:
+#              - source ${BLT_DIR}/scripts/pipelines/setup_app
+#        - debug:
             type: script
             script:
               - ${SOURCE_DIR}/blt/scripts/debug
