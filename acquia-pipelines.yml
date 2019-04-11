@@ -31,7 +31,7 @@ events:
         - debug:
             type: script
             script:
-              - ${SOURCE_DIR}/blt/scripts/
+              - ${SOURCE_DIR}/blt/scripts/debug
         # Uncomment these lines to test database updates using live content.
 #        - install-drupal:
 #            type: script
