@@ -25,10 +25,10 @@ events:
 #            script:
 #              - source ${BLT_DIR}/scripts/pipelines/validate
         # Uncomment these lines to test database updates using live content.
-         - install-drupal:
-            type: script
-            script:
-              - blt drupal:install
+       - install-drupal:
+          type: script
+          script:
+            - blt drupal:install
 #        - setup-app:
 #            type: script
 #            script:
