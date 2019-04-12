@@ -20,10 +20,10 @@ events:
               - source ${BLT_DIR}/scripts/pipelines/setup_env
               # - nvm install v6.9.1
               # - npm install --global yarn
-        - validate:
-            type: script
-            script:
-              - source ${BLT_DIR}/scripts/pipelines/validate
+#        - validate:
+#            type: script
+#            script:
+#              - source ${BLT_DIR}/scripts/pipelines/validate
         # Uncomment these lines to test database updates using live content.
         # - install-drupal:
         #    type: script
@@ -33,21 +33,21 @@ events:
             type: script
             script:
               - source ${BLT_DIR}/scripts/pipelines/setup_app
-        - test-updates:
-            type: script
-            script:
-              - blt drupal:sync:default:site
-        - tests:
-            type: script
-            script:
-              - source ${BLT_DIR}/scripts/pipelines/tests
-        - build-artifact:
-            type: script
-            script:
-              - source ${BLT_DIR}/scripts/pipelines/build_artifact
-        - deploy:
-             script:
-               - pipelines-deploy
+#        - test-updates:
+#            type: script
+#            script:
+#              - blt drupal:sync:default:site
+#        - tests:
+#            type: script
+#            script:
+#              - source ${BLT_DIR}/scripts/pipelines/tests
+#        - build-artifact:
+#            type: script
+#            script:
+#              - source ${BLT_DIR}/scripts/pipelines/build_artifact
+#        - deploy:
+#             script:
+#               - pipelines-deploy
   post-deploy:
     steps:
       - deploy:
