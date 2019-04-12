@@ -56,10 +56,3 @@ cm:
     install_from_config: false
   features:
     no-overrides: true
-
-setup:
-  # Valid values are install, sync, import.
-  strategy: sync
-  # If setup.strategy is import, this file will be imported. File path is
-  # relative to drupal docroot directory.
-  dump-file: null
