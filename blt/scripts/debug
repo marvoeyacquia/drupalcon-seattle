@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -ev
+
+export PATH=${COMPOSER_BIN}:$PATH
+
+drush sql-sync @drupalcon-seattle.dev @self --target-dump=/tmp/tmp.target.sql.gz --structure-tables-key=lightweight --create-db --no-interaction --ansi
+
+drush sql-sanitize --no-interaction --ansi
+
+set +v
+
